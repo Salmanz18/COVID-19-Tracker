@@ -8,13 +8,11 @@ const Charts = () => {
   const [dailyData, setDailyData] = useState([]);
 
   useEffect(() => {
-    const fetchApi = async () => {
+    const fetchAPI = async () => {
       setDailyData(await fetchDailyData());
     };
 
-    console.log(dailyData);
-
-    fetchApi();
+    fetchAPI();
   });
 
   const lineChart =
