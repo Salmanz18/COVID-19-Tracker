@@ -6,8 +6,6 @@ import cx from "classnames";
 import styles from "./Cards.module.css";
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
-  console.log(confirmed);
-
   if (!confirmed) {
     return "Loading...";
   }
@@ -38,7 +36,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              No. of Active Cases of COVID-19
+              Number of Active Cases of COVID-19
             </Typography>
           </CardContent>
         </Grid>
@@ -65,7 +63,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              No. of Recoveries from COVID-19
+              Number of Recoveries from COVID-19
             </Typography>
           </CardContent>
         </Grid>
@@ -92,7 +90,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              No. of Deaths caused by COVID-19
+              Number of Deaths caused by COVID-19
             </Typography>
           </CardContent>
         </Grid>
