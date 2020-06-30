@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import { Cards, Chart, CountryPicker } from "./components";
-import Footer from "./components/Footer/Footer";
-import styles from "./App.module.css";
-import { fetchData } from "./api";
-import covidImage from "./images/image.png";
+import { Cards, Chart, CountryPicker } from './components';
+import Footer from './components/Footer/Footer';
+import styles from './App.module.css';
+import { fetchData } from './api';
+import covidImage from './images/image.png';
 
 class App extends React.Component {
   state = {
@@ -28,7 +28,7 @@ class App extends React.Component {
 
     return (
       <div className={styles.container}>
-        <img className={styles.image} src={covidImage} alt="COVID-19" />
+        <img className={styles.image} src={covidImage} alt='COVID-19' />
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />
